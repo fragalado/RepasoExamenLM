@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="script/95.js"></script>
+</head>
+<body>
+	<a href="index.html">Menu</a>
+	<br>
+	<h1>Formulario Basico</h1>
+	<form name="formularioEntrada">
+		Escribe un mensaje:
+		<input type="text" size="200" name="tuMensaje" value="Tu mensaje">
+		<input type="button" name="guardarMensaje" value="Guardar mensaje" onclick="guardar()">
+	</form>
+	
+	
+	<br><br><br>
+	<h1>EJERCICIO - Formularios Introducción</h1>
+	<form>
+		Introduce un valor:
+		<input type="number" name="tuValor">
+		<input type="button" value="Enviar" onclick="calculaValorForm()">
+	</form>
+	
+	<br><br><br>
+	<h1>TEORÍA - Pasar el form a la función</h1>
+	<form>
+		Introduce un valor:
+		<input type="text" name="tuValor">
+		<br>
+		Resultado:
+		<input type="number" name="tuResultado">
+		<br>
+		<input type="button" value="Enviar" onclick="evaluar(this.form)">
+	</form>
+	
+	<br><br><br>
+	<h1>EJERCICIO - Calculadora falsa</h1>
+	<form>
+		Operacion:
+		<input type="text" name="operacionCalculadora">
+		<br>
+		Resultado:
+		<input type="text" name="resultadoCalculadora">
+		<br>
+		<input type="reset" value="Resetear">
+		<input type="button" value="Enviar" onclick="calculadoraFalsa(this.form)">
+	</form>
+	
+	
+	<br><br><br>
+	<h1>EJERCICIO - Calculadora peso corporal</h1>
+	<form>
+		Edad:
+		<input type="number" name="edadUsu"><br>
+		Altura en cm:
+		<input type="number" name="alturaUsu"><br>
+		Sexo:
+		<select name="sexoUsu">
+			<option value="hombre">Hombre</option>
+			<option value="mujer">Mujer</option>
+		</select>
+		<br>
+		<input type="button" value="Enviar" onclick="calculadoraPeso(this.form)">
+		<br>
+		Resultado:
+		<input type="text" name="resultadoPeso">
+	</form>
+	
+</body>
+</html>
